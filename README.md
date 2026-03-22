@@ -22,5 +22,5 @@ Identify DNA methylation markers distinguising healthy and diseased samples for 
 5. Gene Annotation: Mapped the significant, isolated CpG sites to their genomic coordinates (Chromosome, Base Pair Position) associated gene symbols (UCSC_RefGene_Name), and CpG island proximity (Island, Shore, Shelf and OpenSea).
 
 **Results**
-/ The differential analysis successfully identified **93,354 biologically and statistically significant differentially methylated probes** specific to Colon Cancer.
+The differential analysis successfully identified **93,354 biologically and statistically significant differentially methylated probes** specific to Colon Cancer.
 By annotating these probes with their specific genomic locations and relationship to CpG islands, the final exported dataset [Gene Annotations of Significant biomarkers.csv](https://github.com/MohakKarkhanis/Project-2/blob/main/Gene%20Annotation/Gene%20Annotations%20of%20Significant%20biomarkers.csv) provides a highly targeted list of potential biomarkers for further disease association and functional analysis.
