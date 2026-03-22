@@ -23,4 +23,4 @@ Identify DNA methylation markers distinguising healthy and diseased samples for 
 
 **Results**
 The differential analysis successfully identified **93,354 biologically and statistically significant differentially methylated probes** specific to Colon Cancer.
-By annotating these probes with their specific genomic locations and relationship to CpG islands, the final exported dataset [Gene Annotations of Significant biomarkers.csv] provides a highly targeted list of potential biomarkers for further disease association and functional analysis.
+By annotating these probes with their specific genomic locations and relationship to CpG islands, the final exported dataset [Gene Annotations of Significant biomarkers.csv](https://github.com/MohakKarkhanis/Project-2/blob/main/Gene%20Annotation/Gene%20Annotations%20of%20Significant%20biomarkers.csv) provides a highly targeted list of potential biomarkers for further disease association and functional analysis.
