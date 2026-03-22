@@ -17,4 +17,9 @@ Identify DNA methylation markers distinguising healthy and diseased samples for 
 **Methodology**
 1. Data Acquisition: Harvested high-dimensional beta-value methylation data [GSE53051](https://ftp.ncbi.nlm.nih.gov/geo/series/GSE53nnn/GSE53051/matrix/GSE53051_series_matrix.txt.gz) from the Gene Expression Omnibus (GEO). **Data Structure: Size- 1.8GBs, Unnecessary Rows from the Header: 74 | 485512 CpG sites across 220 samples**
 2. Phenotypic Alignment: Mapped Sample IDs to their clinical metadata to establish binary groups _Normal vs Cancerous_ Colon tissue was selected for the primary differential analysis due to its optimal sample balance. **Dimensions before alignment (Rows x Columns) 485512 x 220 | Dimensions after alignment (Rows x Columns) 220 x 47**
-3. Differential Methylation Analysis: Defined a design and contrast matrix to compare Cancer vs. Normal.
+3. Differential Methylation Analysis: Defined a design and contrast matrix to compare Cancer vs. Normal. Utilized limma to fit linear models and apply Empirical Bayes smoothing to calculate the Log Fold Change (logFC) and adjusted P-values. Filtered the results for both statistical significance (adj. P value) and biological significance (logFC > 0.1 = indicating >10% methylation difference). **Number of Significan DMPs (adj. P<0.05): 152910 | Number of Significant DMPs with delta beta > 0.1: 93354**
+4. Visualization: Generated volcano Plots to visualize the distribution of hypermethylated and hypomethylated CpG sites and created clustered Heatmaps for the top 1001 significant DMPs to observe distinct methylation patterns between cohorts.
+5. Gene Annotation: Mapped the significant, isolated CpG sites to their genomic coordinates (Chromosome, Base Pair Position) associated gene symbols (UCSC_RefGene_Name), and CpG island proximity (Island, Shore, Shelf and OpenSea).
+
+**Results**
+The differential analysis successfully identified **93,354 biologically and statistically significant differentially methylated probes** specific to Colon Cancer.
